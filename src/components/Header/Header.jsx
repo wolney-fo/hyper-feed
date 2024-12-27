@@ -6,6 +6,8 @@ export function Header() {
   return (
     <header className={styles.header}>
       <img src={logo} alt="Hyper Feed" />
+
+      <h1>Hyper Feed</h1>
     </header>
   );
 }
