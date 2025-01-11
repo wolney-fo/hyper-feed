@@ -1,4 +1,5 @@
 import styles from "./Sidebar.module.css";
+import { UserPen } from "lucide-react";
 
 export function Sidebar() {
   return (
@@ -9,12 +10,17 @@ export function Sidebar() {
       />
 
       <div className={styles.profile}>
+        <img className={styles.avatar} src="https://github.com/wolney-fo.png" />
+
         <strong>Wolney Oliveira</strong>
         <span>Node developer</span>
       </div>
 
       <footer>
-        <a href="#">Editar seu perfil</a>
+        <a href="#">
+          <UserPen size={20} />
+          Editar seu perfil
+        </a>
       </footer>
     </aside>
   );
